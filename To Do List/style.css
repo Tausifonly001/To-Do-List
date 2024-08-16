@@ -1,0 +1,123 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f5576c;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #f093fb;
+    font-size: 16px;
+    outline: none;
+}
+
+.addBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f093fb;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #f5576c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li.checked {
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    color: #888;
+}
+
+ul li:hover {
+    background-color: #f093fb;
+    color: white;
+}
+
+.close {
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #f5576c;
+}
+
+@media (max-width: 600px) {
+    ul li {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    input[type="text"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .addBtn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .close {
+        font-size: 18px;
+    }
+}
